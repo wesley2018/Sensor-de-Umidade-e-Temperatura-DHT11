@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+	tools:context="com.example.controle_remoto_app.ControleActivity" 
+	android:background="#FFFFFF">
+	
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo" />
+		
+    <LinearLayout 
+        		android:id="@+id/linearLayoutUmidade" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:paddingTop="200px">
+	<TextView 
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="40sp"
+			android:textColor="#00BFFF"
+			android:textStyle="bold"
+			android:text="UMIDADE" />
+
+		</LinearLayout>
+		
+    <LinearLayout 
+        		android:id="@+id/linearLayoutUmidadeValor" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal">
+	<TextView
+	    android:id="@+id/tvUmidade"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="0%"
+	    android:textSize="50sp"
+	    android:textColor="#00BFFF"
+	    android:textStyle="bold" >
+		</TextView>
+		</LinearLayout>
+		
+		<LinearLayout 
+        		android:id="@+id/linearLayoutTemperatura" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal">
+	<TextView 
+	    	android:paddingTop="50px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#7FFFD4"
+			android:textStyle="bold"
+			android:textSize="40sp"
+			android:text="TEMPERATURA" />
+
+		</LinearLayout>
+		
+    <LinearLayout 
+        		android:id="@+id/linearLayoutTemperaturaValor" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal">
+	<TextView
+	    android:id="@+id/tvTemperatura"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="0º"
+	    android:textSize="50sp"
+	    android:textColor="#7FFFD4"
+	    android:textStyle="bold" >
+		</TextView>
+		</LinearLayout>
+</LinearLayout>
